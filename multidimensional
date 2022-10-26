@@ -1,0 +1,81 @@
+package array;
+
+public class h_multiDiamensioanalArray {
+	
+	
+	public void SingleDiamensional() {
+		
+		int [] myRank = new int [4];
+		myRank[0] = 10;
+		myRank[1] = 9;
+		myRank[2] = 8;
+		myRank[3] = 7;
+		
+		System.out.println("myRank--->"+myRank[0]+" "+myRank[1]+"  "+myRank[2]+"  "+myRank[3]);
+		
+		 int [] myGrade = myRank.clone() ;
+		 myGrade[2] = 18;
+		 
+		 System.out.println("myGrade-->"+myGrade[0]+" "+myGrade[1]+"  "+myGrade[2]+"  "+myGrade[3]);
+		 System.out.println("myRank--->"+myRank[0]+" "+myRank[1]+"  "+myRank[2]+"  "+myRank[3]);
+	}
+	
+public void MultyDiamensional() {
+	
+	int [] [] myMarks = new int [2] [3];
+	
+	myMarks[0][0] = 11   ;
+	myMarks[0 ][1 ] =  12   ;  
+	myMarks[0 ][2 ] =  13   ;  
+	myMarks[1 ][0 ] =  21   ;  //
+	myMarks[1 ][1 ] =  22   ;  
+	myMarks[1 ][2 ] =  23   ;  
+	
+	System.out.println("myMarks-->"+myMarks[0][0]+" "+myMarks[0][1]+" "+ myMarks[0][2]);
+	System.out.println("myMarks-->"+myMarks[1][0]+" "+myMarks[1][1]+" "+ myMarks[1][2]);
+	
+	int [][] myScore = myMarks.clone(); 
+	
+	System.out.println("myScore-->"+myScore[0][0]+" "+myScore[0][1]+" "+ myScore[0][2]);
+	System.out.println("myScore-->"+myScore[1][0]+" "+myScore[1][1]+" "+ myScore[1][2]);
+	
+	
+	myScore[1][0]= 99;
+	System.out.println("After updation------------------------------------------");
+	
+	
+	System.out.println("myScore-->"+myScore[0][0]+" "+myScore[0][1]+" "+ myScore[0][2]);
+	System.out.println("myScore-->"+myScore[1][0]+" "+myScore[1][1]+" "+ myScore[1][2]);
+	
+	System.out.println("myMarks-->"+myMarks[0][0]+" "+myMarks[0][1]+" "+ myMarks[0][2]);
+	System.out.println("myMarks-->"+myMarks[1][0]+" "+myMarks[1][1]+" "+ myMarks[1][2]);
+	
+	
+	/*
+	System.out.println("myMarks[0][0]="+myMarks[0][0]);
+	System.out.println("myMarks[0][1]="+myMarks[0][1]);
+	System.out.println("myMarks[0][2]="+myMarks[0][2]);
+	System.out.println("myMarks[1][0]="+myMarks[1][0]);
+	System.out.println("myMarks[1][1]="+myMarks[1][1]);
+	System.out.println("myMarks[1][2]="+myMarks[1][2]);
+	*/
+	
+		
+	}
+
+	public static void main(String[] args) {
+		
+		h_multiDiamensioanalArray h = new h_multiDiamensioanalArray();
+		//h.SingleDiamensional();
+		h.MultyDiamensional();
+		
+		
+		
+		//int x = 90;
+		//System.out.println("abc"+"   "+"xyz"+x);
+		
+		
+
+	}
+
+}
